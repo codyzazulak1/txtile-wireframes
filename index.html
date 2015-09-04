@@ -1,0 +1,122 @@
+<html>
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="font-awesome.min.css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<head>
+  <link rel="icon" type="image/png" href="LOGO.png">
+  <title>Txtile - Home</title>
+</head>
+<body class="index">
+  
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="login.html">
+          <img alt="Brand" src="FINISHED.png" id="logo">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" id="indexMainDiv">
+    <div class="container">
+      <div class="row">
+        <h2>Welcome, Donnelly Group!</h2>
+      </div>
+      <!-- <br> -->
+      <div class="row row2">
+        <h4>Edit survey for shortcode: #88888</h4>
+        <!-- <br> -->
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default" id="panel1">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne">Question #1</a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <div class="modal-body" id="questionForm">
+                    <form class="form-group myform">
+                      <div class="form-group">
+                        <input type="text" class="form-control cellWithMargin" id="question" placeholder="Question">
+                        <input type="text" class="form-control cellWithMargin" id="answer1" placeholder="Answer [ A ]">
+                        <input type="text" class="form-control cellWithMargin" id="answer2" placeholder="Answer [ B ]">
+                        <input type="text" class="form-control cellWithMargin" id="answer3" placeholder="Answer [ C ]">
+                        <input type="text" class="form-control cellWithMargin" id="answer4" placeholder="Answer [ D ]">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button href="index.html" type="button" id="saveQuestionButton" class="btn btn-primary loginFormButton">Save</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="panel panel-default" id="panel2">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" class="collapsed">Question #2</a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="modal-body" id="questionForm">
+                  <form class="form-group myform">
+                    <div class="form-group">
+                      <input type="text" class="form-control cellWithMargin" id="question" placeholder="Question">
+                      <input type="text" class="form-control cellWithMargin" id="answer1" placeholder="Answer [ A ]">
+                      <input type="text" class="form-control cellWithMargin" id="answer2" placeholder="Answer [ B ]">
+                      <input type="text" class="form-control cellWithMargin" id="answer3" placeholder="Answer [ C ]">
+                      <input type="text" class="form-control cellWithMargin" id="answer4" placeholder="Answer [ D ]">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button href="index.html" type="button" id="saveQuestionButton" class="btn btn-primary loginFormButton">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default" id="panel3">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-target="#collapseThree" href="#collapseThree" class="collapsed">Question #3</a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="modal-body" id="questionForm">
+                  <form class="form-group myform">
+                    <div class="form-group">
+                      <input type="text" class="form-control cellWithMargin" id="question" placeholder="Question">
+                      <input type="text" class="form-control cellWithMargin" id="answer1" placeholder="Answer [ A ]">
+                      <input type="text" class="form-control cellWithMargin" id="answer2" placeholder="Answer [ B ]">
+                      <input type="text" class="form-control cellWithMargin" id="answer3" placeholder="Answer [ C ]">
+                      <input type="text" class="form-control cellWithMargin" id="answer4" placeholder="Answer [ D ]">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button href="index.html" type="button" id="saveQuestionButton" class="btn btn-primary loginFormButton">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row3">
+            <button href="index.html" type="button" id="logoutButton" class="btn btn-primary logoutButton" onclick="location.href='login.html'">Log Out</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html>
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<head>
+  <link rel="icon" type="image/png" href="LOGO.png">
+  <title>Txtile - Login</title>
+</head>
+<body class="login">
+  
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="login.html">
+          <img alt="Brand" src="FINISHED.png" id="logo">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" id="mainDiv">
+
+    <div class="row">
+      <img src="WHITE.png" class="mainImage">
+    </div>
+
+    <h1 id="slogan">Powering your SMS surveys.</h1>
+        <h3 id="underslogan">- Sign up for free 7-day trial! - </h3>
+
+    <div class="row">
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="mainButton">
+        Login / Sign-Up
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+          </div>
+          <div class="modal-body">
+
+            <form class="form-group myform" id="myForm">
+              <div class="form-group">
+                <input type="text" class="form-control cellWithMargin" id="company" placeholder="Company Name">
+                <input type="text" class="form-control cellWithMargin" id="email" placeholder="Email">
+                <input type="text" class="form-control cellWithMargin" id="password" placeholder="Password">
+                <input type="text" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button href="index.html" type="button" id="orangeButton" class="btn btn-primary loginFormButton" onclick="location.href='index.html'">Sign Up</button>
+          </div>
+
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Or Login</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-group myform" id="myForm">
+              <div class="form-group">
+                <input type="text" class="form-control cellWithMargin" id="email" placeholder="Email">
+                <input type="text" class="form-control cellWithMargin" id="password" placeholder="Password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button href="index.html" type="button" id="orangeButton" class="btn btn-primary loginFormButton" onclick="location.href='index.html'">Login</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
