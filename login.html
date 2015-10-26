@@ -51,13 +51,13 @@
                 <input type="text" class="form-control cellWithMargin" id="company" placeholder="Company Name">
                 <input type="text" class="form-control cellWithMargin" id="email" placeholder="Email">
                 <input type="text" class="form-control cellWithMargin" id="password" placeholder="Password">
-                <input type="text" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                <input type="text" class="form-control cellWithMargin" id="confirmPassword" placeholder="Confirm Password">
               </div>
             </form>
 
           </div>
           <div class="modal-footer">
-            <button href="index.html" type="button" id="orangeButton" class="btn btn-primary loginFormButton" onclick="location.href='index.html'">Sign Up</button>
+            <button href="index.html" type="button" id="orangeButton" class="btn btn-primary loginFormButton" data-toggle="modal" data-target="#myModal2" data-dismiss="modal" data-target="#myModal">Sign Up</button>
           </div>
 
           <div class="modal-header">
@@ -73,6 +73,34 @@
           </div>
           <div class="modal-footer">
             <button href="index.html" type="button" id="orangeButton" class="btn btn-primary loginFormButton" onclick="location.href='index.html'">Login</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Create Your First Survey</h4>
+          </div>
+          <div class="modal-body">
+
+            <form class="form-group myform" id="myForm">
+              <div class="form-group">
+                <input type="text" class="form-control cellWithMargin" id="company" placeholder="Create a question to ask">
+                <input type="text" class="form-control cellWithMargin" id="email" placeholder="Answer [A]">
+                <input type="text" class="form-control cellWithMargin" id="password" placeholder="Answer [B]">
+                <input type="text" class="form-control cellWithMargin" id="confirmPassword" placeholder="Answer [C]">
+                <input type="text" class="form-control cellWithMargin" id="confirmPassword" placeholder="Answer [D]">
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button href="index.html" type="button" id="orangeButton" class="btn btn-primary loginFormButton" onclick="location.href='prices.html'">Sign Up</button>
           </div>
 
         </div>
